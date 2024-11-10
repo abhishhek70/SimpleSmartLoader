@@ -52,7 +52,6 @@ void segfault_handler(int sig, siginfo_t *info, void *context){
     exit(1);
 }
 
-
 void setup_segfault_handler(){
     struct sigaction sa;
     sa.sa_flags = SA_SIGINFO;
